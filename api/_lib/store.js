@@ -1,4 +1,4 @@
-import { put, get } from '@vercel/blob';
+import { put, head } from '@vercel/blob';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
@@ -13,24 +13,18 @@ export async function readSeed() {
   return JSON.parse(await readFile(file, 'utf8'));
 }
 
-async function streamToText(stream) {
-  const reader = stream.getReader();
-  const chunks = [];
-  for (;;) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    chunks.push(value);
-  }
-  return Buffer.concat(chunks.map((c) => Buffer.from(c))).toString('utf8');
-}
-
 export async function readMenu() {
   if (storageConfigured()) {
     try {
-      const r = await get(MENU_PATH, { access: 'public', useCache: false });
-      if (r && r.stream) return { menu: JSON.parse(await streamToText(r.stream)), source: 'blob' };
+      const meta = await head(MENU_PATH);
+      // Version the URL by upload time: fresh after every save, still CDN cacheable.
+      const v = new Date(meta.uploadedAt).getTime();
+      const r = await fetch(`${meta.url}?v=${v}`, { cache: 'no-store' });
+      if (r.ok) return { menu: await r.json(), source: 'blob' };
+      console.error('readMenu fetch', r.status);
     } catch (e) {
-      if (!/not.?found/i.test(String(e && e.message))) console.error('readMenu', e);
+      const msg = String((e && e.message) || e);
+      if (!/not.?found|does not exist/i.test(msg)) console.error('readMenu', e);
     }
   }
   return { menu: await readSeed(), source: 'seed' };
