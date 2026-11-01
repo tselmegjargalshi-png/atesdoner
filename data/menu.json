@@ -1,0 +1,1925 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-01T10:40:28.427Z",
+  "settings": {
+    "name": "Ateş Döner",
+    "branch": "Güllük",
+    "tagline": "Hatay’ın efsane soslu döneri",
+    "since": "2009",
+    "notice": "",
+    "address": "Güllük, Milas, Muğla",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ate%C5%9F+D%C3%B6ner+G%C3%BCll%C3%BCk",
+    "instagram": "atesdonergulluk",
+    "phones": [
+      "0252 522 40 30",
+      "0532 170 34 48"
+    ],
+    "website": "atesdoner.com.tr",
+    "mealCards": [],
+    "footnotes": [
+      "Tüm ürünlerimiz günlük taze olarak hazırlanmaktadır. Katkı ve koruyucu içermez.",
+      "Gramajlar pişmiş ürün ağırlığıdır.",
+      "Dürümlerin içerisine isteğe göre yeşillik ilave edilir.",
+      "Ürünlerimiz gluten vb. alerjen madde içerebilir. Alerjiniz varsa lütfen sipariş öncesi personelimize bildiriniz.",
+      "Kalori değerleri yaklaşık değerlerdir.",
+      "Fiyat geçişlerinde önceden bildirmeden değiştirme hakkımız saklıdır."
+    ]
+  },
+  "categories": [
+    {
+      "id": "tavuk_klasik",
+      "name": "Tavuk Klasik Dürüm",
+      "note": "Hatay usulü, ince lavaşta soslu tavuk döner.",
+      "items": [
+        {
+          "id": "p_1",
+          "name": "Ateş Klasik",
+          "description": "Hatay usulü özel soslu tavuk döner, çıtır patates ve turşuyla ince lavaşa sarılır. Ateş Döner’in imza lezzeti.",
+          "ingredients": "Patates, turşu, özel sos, mayonez",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 225,
+              "kcal": 150
+            },
+            {
+              "label": "120 gr",
+              "price": 300,
+              "kcal": 225
+            },
+            {
+              "label": "160 gr",
+              "price": 350,
+              "kcal": 300
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "populer"
+          ],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_2",
+          "name": "Ateş Gurme",
+          "description": "Klasik tarifimize eriyen kaşar eklenir; daha yumuşak ve doyurucu bir dürüm.",
+          "ingredients": "Patates, turşu, özel sos, mayonez, kaşar",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 275,
+              "kcal": 150
+            },
+            {
+              "label": "120 gr",
+              "price": 350,
+              "kcal": 225
+            },
+            {
+              "label": "160 gr",
+              "price": 400,
+              "kcal": 300
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_3",
+          "name": "Ateş Acılı",
+          "description": "Acı sevenlere: özel sosumuz acı biberle güçlendirilir, her lokmada ateş hissedilir.",
+          "ingredients": "Patates, turşu, özel sos, mayonez",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 225,
+              "kcal": 150
+            },
+            {
+              "label": "120 gr",
+              "price": 300,
+              "kcal": 225
+            },
+            {
+              "label": "160 gr",
+              "price": 350,
+              "kcal": 300
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "acili"
+          ],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_4",
+          "name": "Ateş Special",
+          "description": "Taze soğan ve domatesle zenginleşen, ferah ve dengeli bir tavuk dürüm.",
+          "ingredients": "Patates, turşu, özel sos, mayonez, soğan, domates",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 225,
+              "kcal": 150
+            },
+            {
+              "label": "120 gr",
+              "price": 300,
+              "kcal": 225
+            },
+            {
+              "label": "160 gr",
+              "price": 350,
+              "kcal": 300
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_5",
+          "name": "Ateş Atom",
+          "description": "Kaşar ve cheddar bir arada; peynir tutkunları için en dolu dürümümüz.",
+          "ingredients": "Patates, turşu, özel sos, mayonez, kaşar, cheddar",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 295,
+              "kcal": 150
+            },
+            {
+              "label": "120 gr",
+              "price": 370,
+              "kcal": 225
+            },
+            {
+              "label": "160 gr",
+              "price": 420,
+              "kcal": 300
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "tavuk_zurna",
+      "name": "Tavuk Zurna Dürüm",
+      "note": "Uzun zurna lavaşta, daha bol porsiyon.",
+      "items": [
+        {
+          "id": "p_6",
+          "name": "Ateş Zurna",
+          "description": "Klasik tarifimiz uzun zurna lavaşta; büyük iştahlar için bol ve soslu.",
+          "ingredients": "Patates, turşu, özel sos, mayonez",
+          "variants": [
+            {
+              "label": "100 gr",
+              "price": 275,
+              "kcal": 190
+            },
+            {
+              "label": "150 gr",
+              "price": 350,
+              "kcal": 285
+            },
+            {
+              "label": "200 gr",
+              "price": 400,
+              "kcal": 380
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "populer"
+          ],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_7",
+          "name": "Ateş Zurna Gurme",
+          "description": "Zurna lavaşta kaşarlı tavuk döner; uzun, sıcak ve doyurucu.",
+          "ingredients": "Patates, turşu, özel sos, mayonez, kaşar",
+          "variants": [
+            {
+              "label": "100 gr",
+              "price": 325,
+              "kcal": 190
+            },
+            {
+              "label": "150 gr",
+              "price": 400,
+              "kcal": 285
+            },
+            {
+              "label": "200 gr",
+              "price": 450,
+              "kcal": 380
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_8",
+          "name": "Ateş Zurna Acılı",
+          "description": "Acılı özel sosla hazırlanan zurna dürüm; bol porsiyon, bol ateş.",
+          "ingredients": "Patates, turşu, özel sos, mayonez",
+          "variants": [
+            {
+              "label": "100 gr",
+              "price": 275,
+              "kcal": 190
+            },
+            {
+              "label": "150 gr",
+              "price": 350,
+              "kcal": 285
+            },
+            {
+              "label": "200 gr",
+              "price": 400,
+              "kcal": 380
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "acili"
+          ],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_9",
+          "name": "Ateş Zurna Special",
+          "description": "Soğan ve domatesle hazırlanan, ferah lezzetli zurna dürüm.",
+          "ingredients": "Patates, turşu, özel sos, mayonez, soğan, domates",
+          "variants": [
+            {
+              "label": "100 gr",
+              "price": 275,
+              "kcal": 190
+            },
+            {
+              "label": "150 gr",
+              "price": 350,
+              "kcal": 285
+            },
+            {
+              "label": "200 gr",
+              "price": 400,
+              "kcal": 380
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_a",
+          "name": "Ateş Zurna Atom",
+          "description": "Kaşar ve cheddarlı zurna; menünün en dolu tavuk dürümü.",
+          "ingredients": "Patates, turşu, özel sos, mayonez, kaşar, cheddar",
+          "variants": [
+            {
+              "label": "100 gr",
+              "price": 345,
+              "kcal": 190
+            },
+            {
+              "label": "150 gr",
+              "price": 420,
+              "kcal": 285
+            },
+            {
+              "label": "200 gr",
+              "price": 470,
+              "kcal": 380
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "tavuk_gobit",
+      "name": "Tavuk Gobit",
+      "note": "Gobit ekmeğinize soğan, patates ve sos isteğe göre ilave edilir.",
+      "items": [
+        {
+          "id": "p_b",
+          "name": "Ateş Gobit",
+          "description": "Fırından taze gobit ekmeği arasında bol soslu tavuk döner ve çıtır sebzeler.",
+          "ingredients": "Marul, domates, turşu, mayonez",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 225,
+              "kcal": 150
+            },
+            {
+              "label": "120 gr",
+              "price": 300,
+              "kcal": 225
+            },
+            {
+              "label": "160 gr",
+              "price": 350,
+              "kcal": 300
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal",
+            "susam"
+          ],
+          "tags": [],
+          "image": "/assets/img/food/tavuk-gobit.webp",
+          "visible": true
+        },
+        {
+          "id": "p_c",
+          "name": "Ateş Gobit Gurme",
+          "description": "Kaşarla eriyen tavuk döner, taze gobit ekmeğinde.",
+          "ingredients": "Marul, domates, turşu, mayonez, kaşar",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 275,
+              "kcal": 150
+            },
+            {
+              "label": "120 gr",
+              "price": 350,
+              "kcal": 225
+            },
+            {
+              "label": "160 gr",
+              "price": 400,
+              "kcal": 300
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal",
+            "susam"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "/assets/img/food/tavuk-gobit.webp",
+          "visible": true
+        },
+        {
+          "id": "p_d",
+          "name": "Ateş Gobit Atom",
+          "description": "Kaşar ve cheddarlı, ekmek arası en doyurucu tavuk lezzeti.",
+          "ingredients": "Marul, domates, turşu, mayonez, kaşar, cheddar",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 295,
+              "kcal": 150
+            },
+            {
+              "label": "120 gr",
+              "price": 370,
+              "kcal": 225
+            },
+            {
+              "label": "160 gr",
+              "price": 420,
+              "kcal": 300
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal",
+            "susam"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "/assets/img/food/tavuk-gobit.webp",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "tavuk_porsiyon",
+      "name": "Tavuk Porsiyon",
+      "note": "Porsiyonlar ikramlarıyla birlikte servis edilir.",
+      "items": [
+        {
+          "id": "p_e",
+          "name": "Tavuk İskender",
+          "description": "Tereyağlı pide üzerinde tavuk döner, özel domates sosu ve yoğurtla; sıcak sahanda gelir.",
+          "ingredients": "Pide, yoğurt, salata, köz domates, köz biber ikramımızdır",
+          "variants": [
+            {
+              "label": "140 gr",
+              "price": 385,
+              "kcal": 420
+            },
+            {
+              "label": "200 gr",
+              "price": 475,
+              "kcal": 470
+            },
+            {
+              "label": "Menü: Cips + Ayran",
+              "price": 480,
+              "kcal": 640,
+              "kcalEstimated": true
+            },
+            {
+              "label": "Menü: Cips + Kola",
+              "price": 500,
+              "kcal": 700,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut"
+          ],
+          "tags": [
+            "populer"
+          ],
+          "image": "/assets/img/food/tavuk-iskender.webp",
+          "visible": true
+        },
+        {
+          "id": "p_f",
+          "name": "Tavuk Servis",
+          "description": "Tabakta tavuk döner; lavaş, patates ve köz sebzelerle eksiksiz bir öğün.",
+          "ingredients": "Lavaş, salata, patates, köz domates, köz biber ikramımızdır",
+          "variants": [
+            {
+              "label": "140 gr",
+              "price": 385,
+              "kcal": 420
+            },
+            {
+              "label": "200 gr",
+              "price": 475,
+              "kcal": 470
+            },
+            {
+              "label": "Menü: Cips + Ayran",
+              "price": 480,
+              "kcal": 640,
+              "kcalEstimated": true
+            },
+            {
+              "label": "Menü: Cips + Kola",
+              "price": 500,
+              "kcal": 700,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut"
+          ],
+          "tags": [],
+          "image": "/assets/img/food/tavuk-servis.webp",
+          "visible": true
+        },
+        {
+          "id": "p_g",
+          "name": "Pilav Üstü Tavuk",
+          "description": "Tereyağlı pirinç pilavı üzerinde tavuk döner, yanında köz sebzeler ve salata.",
+          "ingredients": "Lavaş, salata, patates, köz domates, köz biber ikramımızdır",
+          "variants": [
+            {
+              "label": "140 gr",
+              "price": 385,
+              "kcal": 420
+            },
+            {
+              "label": "200 gr",
+              "price": 475,
+              "kcal": 470
+            },
+            {
+              "label": "Menü: Cips + Ayran",
+              "price": 480,
+              "kcal": 640,
+              "kcalEstimated": true
+            },
+            {
+              "label": "Menü: Cips + Kola",
+              "price": 500,
+              "kcal": 700,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut"
+          ],
+          "tags": [],
+          "image": "/assets/img/food/tavuk-pilav.webp",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "atesin_enleri",
+      "name": "Ateşin Enleri",
+      "note": "Tavuk dönerin en çok sevilen tabakları.",
+      "items": [
+        {
+          "id": "p_h",
+          "name": "Ateş Efsane",
+          "description": "120 gr tavuk döner, kaşarla dürülüp dilimlenir; patates kızartması ve soslarla sunulur.",
+          "ingredients": "Turşu, maydanoz, mayonez, kaşar",
+          "variants": [
+            {
+              "label": "120 gr",
+              "price": 380,
+              "kcal": 335
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "populer"
+          ],
+          "image": "/assets/img/food/tavuk-efsane.webp",
+          "visible": true
+        },
+        {
+          "id": "p_i",
+          "name": "Ateş Bomba",
+          "description": "120 gr tavuk döner, kaşar ve cheddarla tost gibi kızartılır; patates ve soslarla gelir.",
+          "ingredients": "Turşu, maydanoz, mayonez, kaşar, cheddar",
+          "variants": [
+            {
+              "label": "120 gr",
+              "price": 380,
+              "kcal": 335
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "/assets/img/food/tavuk-bomba.webp",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "tavuk_menuler",
+      "name": "Tavuk Menüler",
+      "note": "Avantajlı menüler: içeceğinizi ayran ya da kola olarak seçin.",
+      "items": [
+        {
+          "id": "p_j",
+          "name": "Gobit Menü",
+          "description": "Ateş Gobit, çıtır cips ve soğuk içecek bir arada.",
+          "ingredients": "Ateş Gobit + cips + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 350,
+              "kcal": 560,
+              "kcalEstimated": true
+            },
+            {
+              "label": "Kola ile",
+              "price": 370,
+              "kcal": 610,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal",
+            "susam"
+          ],
+          "tags": [],
+          "image": "/assets/img/food/tavuk-gobit.webp",
+          "visible": true
+        },
+        {
+          "id": "p_k",
+          "name": "Avantaj 3’lü Klasik",
+          "description": "Ateş Klasik dürüm, patates kızartması ve içecek.",
+          "ingredients": "Ateş Klasik + patates + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 350,
+              "kcal": 335
+            },
+            {
+              "label": "Kola ile",
+              "price": 370,
+              "kcal": 390
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_l",
+          "name": "Avantaj 3’lü Special",
+          "description": "Soğan ve domatesli Ateş Special, patates ve içecek.",
+          "ingredients": "Ateş Special + patates + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 350,
+              "kcal": 335
+            },
+            {
+              "label": "Kola ile",
+              "price": 370,
+              "kcal": 390
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_m",
+          "name": "Avantaj 3’lü Gurme",
+          "description": "Kaşarlı Ateş Gurme, patates ve içecek.",
+          "ingredients": "Ateş Gurme + patates + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 400,
+              "kcal": 385
+            },
+            {
+              "label": "Kola ile",
+              "price": 420,
+              "kcal": 440
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_n",
+          "name": "Avantaj 3’lü Zurna",
+          "description": "Bol porsiyon Ateş Zurna, patates ve içecek.",
+          "ingredients": "Ateş Zurna + patates + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 400,
+              "kcal": 335
+            },
+            {
+              "label": "Kola ile",
+              "price": 420,
+              "kcal": 390
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_o",
+          "name": "Muhteşem 4’lü Klasik",
+          "description": "Ateş Klasik, patates, içecek ve günün tatlısı.",
+          "ingredients": "Ateş Klasik + patates + tatlı + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 400,
+              "kcal": 350
+            },
+            {
+              "label": "Kola ile",
+              "price": 420,
+              "kcal": 415
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_p",
+          "name": "Muhteşem 4’lü Special",
+          "description": "Ateş Special, patates, içecek ve tatlı ile tam bir öğün.",
+          "ingredients": "Ateş Special + patates + tatlı + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 400,
+              "kcal": 350
+            },
+            {
+              "label": "Kola ile",
+              "price": 420,
+              "kcal": 415
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_q",
+          "name": "Muhteşem 4’lü Gurme",
+          "description": "Kaşarlı Ateş Gurme, patates, içecek ve tatlı.",
+          "ingredients": "Ateş Gurme + patates + tatlı + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 450,
+              "kcal": 400
+            },
+            {
+              "label": "Kola ile",
+              "price": 480,
+              "kcal": 465
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_r",
+          "name": "Muhteşem 4’lü Zurna",
+          "description": "Ateş Zurna, patates, içecek ve tatlı; en doyurucu menü.",
+          "ingredients": "Ateş Zurna + patates + tatlı + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 450,
+              "kcal": 350
+            },
+            {
+              "label": "Kola ile",
+              "price": 480,
+              "kcal": 415
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "et_klasik",
+      "name": "Et Klasik Dürüm",
+      "note": "Yaprak yaprak kesilen et döner, lavaşta.",
+      "items": [
+        {
+          "id": "p_s",
+          "name": "Ateş Et Klasik",
+          "description": "Ocakbaşı lezzetinde et döner, soğan ve domatesle lavaşa sarılır.",
+          "ingredients": "Turşu, soğan, özel sos, domates",
+          "variants": [
+            {
+              "label": "60 gr",
+              "price": 345,
+              "kcal": 165
+            },
+            {
+              "label": "80 gr",
+              "price": 415,
+              "kcal": 215
+            },
+            {
+              "label": "100 gr",
+              "price": 465,
+              "kcal": 265
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [
+            "populer"
+          ],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_t",
+          "name": "Ateş Et Gurme",
+          "description": "Et döner ve eriyen kaşarın buluştuğu sıcacık dürüm.",
+          "ingredients": "Turşu, soğan, özel sos, domates, kaşar",
+          "variants": [
+            {
+              "label": "60 gr",
+              "price": 395,
+              "kcal": 190
+            },
+            {
+              "label": "80 gr",
+              "price": 465,
+              "kcal": 240
+            },
+            {
+              "label": "100 gr",
+              "price": 515,
+              "kcal": 290
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_u",
+          "name": "Ateş Et Atom",
+          "description": "Kaşar ve cheddarla zenginleşen, en dolu et dürümümüz.",
+          "ingredients": "Turşu, soğan, özel sos, domates, kaşar, cheddar",
+          "variants": [
+            {
+              "label": "60 gr",
+              "price": 415,
+              "kcal": 215
+            },
+            {
+              "label": "80 gr",
+              "price": 485,
+              "kcal": 265
+            },
+            {
+              "label": "100 gr",
+              "price": 535,
+              "kcal": 315
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "et_zurna",
+      "name": "Et Zurna Dürüm",
+      "note": "Uzun zurna lavaşta bol et döner.",
+      "items": [
+        {
+          "id": "p_v",
+          "name": "Ateş Et Zurna",
+          "description": "Zurna lavaşta bol et döner; soğan, domates ve özel sosla.",
+          "ingredients": "Turşu, soğan, özel sos, domates",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 415,
+              "kcal": 215
+            },
+            {
+              "label": "100 gr",
+              "price": 485,
+              "kcal": 265
+            },
+            {
+              "label": "120 gr",
+              "price": 535,
+              "kcal": 315
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_w",
+          "name": "Ateş Et Zurna Gurme",
+          "description": "Kaşarlı et döner, uzun zurna lavaşta.",
+          "ingredients": "Turşu, soğan, özel sos, domates, kaşar",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 465,
+              "kcal": 240
+            },
+            {
+              "label": "100 gr",
+              "price": 535,
+              "kcal": 290
+            },
+            {
+              "label": "120 gr",
+              "price": 585,
+              "kcal": 340
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_x",
+          "name": "Ateş Et Zurna Atom",
+          "description": "Kaşar ve cheddarlı et zurna; büyük iştahlar için.",
+          "ingredients": "Turşu, soğan, özel sos, domates, kaşar, cheddar",
+          "variants": [
+            {
+              "label": "80 gr",
+              "price": 485,
+              "kcal": 265
+            },
+            {
+              "label": "100 gr",
+              "price": 545,
+              "kcal": 315
+            },
+            {
+              "label": "120 gr",
+              "price": 605,
+              "kcal": 365
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "et_gobit",
+      "name": "Et Gobit",
+      "note": "Gobit ekmeğinize soğan, patates ve sos isteğe göre ilave edilir.",
+      "items": [
+        {
+          "id": "p_y",
+          "name": "Ateş Et Gobit",
+          "description": "Taze gobit ekmeğinde bol et döner, soğan ve domatesle.",
+          "ingredients": "Turşu, soğan, domates",
+          "variants": [
+            {
+              "label": "60 gr",
+              "price": 345,
+              "kcal": 165
+            },
+            {
+              "label": "80 gr",
+              "price": 415,
+              "kcal": 215
+            },
+            {
+              "label": "100 gr",
+              "price": 465,
+              "kcal": 315
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "susam"
+          ],
+          "tags": [],
+          "image": "/assets/img/food/et-gobit.webp",
+          "visible": true
+        },
+        {
+          "id": "p_z",
+          "name": "Ateş Et Gobit Gurme",
+          "description": "Kaşarla eriyen et döner, gobit ekmeği arasında.",
+          "ingredients": "Turşu, soğan, domates, kaşar",
+          "variants": [
+            {
+              "label": "60 gr",
+              "price": 395,
+              "kcal": 190
+            },
+            {
+              "label": "80 gr",
+              "price": 465,
+              "kcal": 240
+            },
+            {
+              "label": "100 gr",
+              "price": 515,
+              "kcal": 290
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "susam"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "/assets/img/food/et-gobit.webp",
+          "visible": true
+        },
+        {
+          "id": "p_10",
+          "name": "Ateş Et Gobit Atom",
+          "description": "Kaşar ve cheddarlı et döner; ekmek arası en güçlü lezzet.",
+          "ingredients": "Turşu, domates, kaşar, cheddar, soğan",
+          "variants": [
+            {
+              "label": "60 gr",
+              "price": 415,
+              "kcal": 215
+            },
+            {
+              "label": "80 gr",
+              "price": 485,
+              "kcal": 265
+            },
+            {
+              "label": "100 gr",
+              "price": 535,
+              "kcal": 315
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "susam"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "/assets/img/food/et-gobit.webp",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "et_porsiyon",
+      "name": "Et Porsiyon",
+      "note": "Porsiyonlar ikramlarıyla birlikte servis edilir.",
+      "items": [
+        {
+          "id": "p_11",
+          "name": "Et İskender",
+          "description": "Tereyağlı pide üzerinde et döner, domates sosu ve yoğurtla; klasik Bursa usulü sunum.",
+          "ingredients": "Pide, yoğurt, salata, köz domates, köz biber ikramımızdır",
+          "variants": [
+            {
+              "label": "110 gr",
+              "price": 485,
+              "kcal": 500
+            },
+            {
+              "label": "160 gr",
+              "price": 615,
+              "kcal": 550
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut"
+          ],
+          "tags": [
+            "populer"
+          ],
+          "image": "/assets/img/food/et-iskender.webp",
+          "visible": true
+        },
+        {
+          "id": "p_12",
+          "name": "Et Pilav Üstü",
+          "description": "Tereyağlı pilav üzerinde et döner, yanında patates ve köz sebzeler.",
+          "ingredients": "Lavaş, salata, patates, köz domates, köz biber ikramımızdır",
+          "variants": [
+            {
+              "label": "110 gr",
+              "price": 485,
+              "kcal": 500
+            },
+            {
+              "label": "160 gr",
+              "price": 615,
+              "kcal": 550
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut"
+          ],
+          "tags": [],
+          "image": "/assets/img/food/et-pilav.webp",
+          "visible": true
+        },
+        {
+          "id": "p_13",
+          "name": "Et Servis",
+          "description": "Tabakta et döner; lavaş, patates, salata ve köz sebzelerle.",
+          "ingredients": "Lavaş, salata, patates, köz domates, köz biber ikramımızdır",
+          "variants": [
+            {
+              "label": "110 gr",
+              "price": 485,
+              "kcal": 500
+            },
+            {
+              "label": "160 gr",
+              "price": 615,
+              "kcal": 550
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut"
+          ],
+          "tags": [],
+          "image": "/assets/img/food/et-servis.webp",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "en_sevilenler",
+      "name": "En Sevilenler",
+      "note": "Et dönerin en çok tercih edilen tabakları.",
+      "items": [
+        {
+          "id": "p_14",
+          "name": "Ateş Et Bomba",
+          "description": "Et döner, kaşar ve cheddarla kızartılıp dilimlenir; patates ve soslarla sunulur.",
+          "ingredients": "Turşu, maydanoz, mayonez, kaşar, cheddar",
+          "variants": [
+            {
+              "label": "Porsiyon",
+              "price": 495,
+              "kcal": 345
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "populer",
+            "peynirli"
+          ],
+          "image": "/assets/img/food/et-bomba.webp",
+          "visible": true
+        },
+        {
+          "id": "p_15",
+          "name": "Ateş Et Efsane",
+          "description": "Kaşarlı et döner dürüm dilimleri, patates kızartması ve soslarla.",
+          "ingredients": "Turşu, maydanoz, mayonez, kaşar",
+          "variants": [
+            {
+              "label": "Porsiyon",
+              "price": 475,
+              "kcal": 345
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta",
+            "hardal"
+          ],
+          "tags": [
+            "peynirli"
+          ],
+          "image": "/assets/img/food/et-efsane.webp",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "et_menuler",
+      "name": "Et Menüler",
+      "note": "Avantajlı menüler: içeceğinizi ayran ya da kola olarak seçin.",
+      "items": [
+        {
+          "id": "p_16",
+          "name": "Et Gobit Menü",
+          "description": "Ateş Et Gobit, çıtır cips ve soğuk içecek bir arada.",
+          "ingredients": "Ateş Et Gobit + cips + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 445,
+              "kcal": 560,
+              "kcalEstimated": true
+            },
+            {
+              "label": "Kola ile",
+              "price": 465,
+              "kcal": 610,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "susam"
+          ],
+          "tags": [],
+          "image": "/assets/img/food/et-gobit.webp",
+          "visible": true
+        },
+        {
+          "id": "p_17",
+          "name": "Avantaj 3’lü Et Klasik",
+          "description": "Ateş Et Klasik dürüm, patates kızartması ve içecek.",
+          "ingredients": "Ateş Et Klasik + patates + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 445,
+              "kcal": 345
+            },
+            {
+              "label": "Kola ile",
+              "price": 465,
+              "kcal": 405
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_18",
+          "name": "Avantaj 3’lü Et Gurme",
+          "description": "Kaşarlı Ateş Et Gurme, patates ve içecek.",
+          "ingredients": "Ateş Et Gurme + patates + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 495,
+              "kcal": 395
+            },
+            {
+              "label": "Kola ile",
+              "price": 515,
+              "kcal": 455
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_19",
+          "name": "Avantaj 3’lü Et Zurna",
+          "description": "Bol porsiyon Ateş Et Zurna, patates ve içecek.",
+          "ingredients": "Ateş Et Zurna + patates + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 495,
+              "kcal": 345
+            },
+            {
+              "label": "Kola ile",
+              "price": 515,
+              "kcal": 400
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1a",
+          "name": "Avantaj 3’lü Et Atom",
+          "description": "Kaşar ve cheddarlı Ateş Et Atom, patates ve içecek.",
+          "ingredients": "Ateş Et Atom + patates + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 515,
+              "kcal": 410
+            },
+            {
+              "label": "Kola ile",
+              "price": 535,
+              "kcal": 470
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1b",
+          "name": "Muhteşem 4’lü Et Klasik",
+          "description": "Ateş Et Klasik, patates, içecek ve tatlı.",
+          "ingredients": "Ateş Et Klasik + patates + tatlı + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 495,
+              "kcal": 360
+            },
+            {
+              "label": "Kola ile",
+              "price": 515,
+              "kcal": 425
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1c",
+          "name": "Muhteşem 4’lü Et Gurme",
+          "description": "Kaşarlı Ateş Et Gurme, patates, içecek ve tatlı.",
+          "ingredients": "Ateş Et Gurme + patates + tatlı + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 555,
+              "kcal": 410
+            },
+            {
+              "label": "Kola ile",
+              "price": 585,
+              "kcal": 470
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1d",
+          "name": "Muhteşem 4’lü Et Zurna",
+          "description": "Ateş Et Zurna, patates, içecek ve tatlı ile tam bir öğün.",
+          "ingredients": "Ateş Et Zurna + patates + tatlı + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 555,
+              "kcal": 360
+            },
+            {
+              "label": "Kola ile",
+              "price": 585,
+              "kcal": 425
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1e",
+          "name": "Muhteşem 4’lü Et Atom",
+          "description": "Ateş Et Atom, patates, içecek ve tatlı; menünün en doyurucusu.",
+          "ingredients": "Ateş Et Atom + patates + tatlı + ayran ya da kola",
+          "variants": [
+            {
+              "label": "Ayran ile",
+              "price": 585,
+              "kcal": 460
+            },
+            {
+              "label": "Kola ile",
+              "price": 610,
+              "kcal": 520
+            }
+          ],
+          "allergens": [
+            "gluten",
+            "sut",
+            "yumurta"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "patates",
+      "name": "Patates",
+      "note": "Günlük taze doğranan patatesler.",
+      "items": [
+        {
+          "id": "p_1f",
+          "name": "Patates Kızartması",
+          "description": "Günlük taze doğranıp kızartılan, dışı çıtır içi yumuşak patates.",
+          "ingredients": "Taze patates, tuz",
+          "variants": [
+            {
+              "label": "Küçük Boy",
+              "price": 80,
+              "kcal": 200
+            },
+            {
+              "label": "Orta Boy",
+              "price": 120,
+              "kcal": 310
+            },
+            {
+              "label": "Büyük Boy",
+              "price": 160,
+              "kcal": 450
+            }
+          ],
+          "allergens": [],
+          "tags": [],
+          "image": "/assets/img/food/patates.webp",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "icecekler",
+      "name": "İçecekler",
+      "note": "",
+      "items": [
+        {
+          "id": "p_1g",
+          "name": "Yayık Ayran",
+          "description": "Köpüklü, serinletici yayık ayranı; dönerin en iyi eşlikçisi.",
+          "ingredients": "Yoğurt, su, tuz",
+          "variants": [
+            {
+              "label": "Bardak",
+              "price": 60,
+              "kcal": 110,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "sut"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1h",
+          "name": "Şalgam",
+          "description": "Adana usulü, ekşimsi ve ferahlatıcı şalgam suyu.",
+          "ingredients": "Mor havuç, bulgur ekşisi, tuz",
+          "variants": [
+            {
+              "label": "Şişe",
+              "price": 60,
+              "kcal": 25,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1i",
+          "name": "Kola",
+          "description": "Buz gibi Coca Cola, kutu.",
+          "ingredients": "",
+          "variants": [
+            {
+              "label": "Kutu",
+              "price": 90,
+              "kcal": 139,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1j",
+          "name": "Fanta",
+          "description": "Portakal aromalı gazlı içecek, kutu.",
+          "ingredients": "",
+          "variants": [
+            {
+              "label": "Kutu",
+              "price": 90,
+              "kcal": 130,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1k",
+          "name": "Sprite",
+          "description": "Limon ve misket limonu aromalı gazlı içecek, kutu.",
+          "ingredients": "",
+          "variants": [
+            {
+              "label": "Kutu",
+              "price": 90,
+              "kcal": 100,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1l",
+          "name": "Fuse Tea",
+          "description": "Soğuk çay; şeftali ya da limon aromalı.",
+          "ingredients": "",
+          "variants": [
+            {
+              "label": "Şişe",
+              "price": 90,
+              "kcal": 95,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1m",
+          "name": "Sade Soda",
+          "description": "Doğal mineralli maden suyu.",
+          "ingredients": "",
+          "variants": [
+            {
+              "label": "Şişe",
+              "price": 40,
+              "kcal": 0,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1n",
+          "name": "Meyveli Soda",
+          "description": "Meyve aromalı mineralli maden suyu.",
+          "ingredients": "",
+          "variants": [
+            {
+              "label": "Şişe",
+              "price": 60,
+              "kcal": 70,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1o",
+          "name": "Su",
+          "description": "Doğal kaynak suyu, 0,5 lt.",
+          "ingredients": "",
+          "variants": [
+            {
+              "label": "Şişe",
+              "price": 20,
+              "kcal": 0,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [],
+          "tags": [],
+          "image": "",
+          "visible": true
+        }
+      ],
+      "visible": true
+    },
+    {
+      "id": "tatlilar",
+      "name": "Tatlılar",
+      "note": "",
+      "items": [
+        {
+          "id": "p_1p",
+          "name": "Puding",
+          "description": "Kakaolu, ipeksi kıvamda soğuk puding.",
+          "ingredients": "Süt, şeker, kakao, nişasta",
+          "variants": [
+            {
+              "label": "Kase",
+              "price": 60,
+              "kcal": 250,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "sut"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1q",
+          "name": "Kazandibi",
+          "description": "Tabanı karamelize edilmiş geleneksel sütlü tatlı.",
+          "ingredients": "Süt, şeker, pirinç unu, nişasta",
+          "variants": [
+            {
+              "label": "Porsiyon",
+              "price": 60,
+              "kcal": 300,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "sut",
+            "gluten"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1r",
+          "name": "Sütlaç",
+          "description": "Fırında üzeri kızarmış, tarçınla servis edilen sütlaç.",
+          "ingredients": "Süt, pirinç, şeker",
+          "variants": [
+            {
+              "label": "Kase",
+              "price": 60,
+              "kcal": 280,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "sut"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        },
+        {
+          "id": "p_1s",
+          "name": "Muhallebi",
+          "description": "Hafif ve serinletici klasik muhallebi.",
+          "ingredients": "Süt, şeker, pirinç unu",
+          "variants": [
+            {
+              "label": "Kase",
+              "price": 60,
+              "kcal": 240,
+              "kcalEstimated": true
+            }
+          ],
+          "allergens": [
+            "sut"
+          ],
+          "tags": [],
+          "image": "",
+          "visible": true
+        }
+      ],
+      "visible": true
+    }
+  ]
+}

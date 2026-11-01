@@ -1,0 +1,49 @@
+# Ateş Döner Güllük · Дижитал меню
+
+Турк хэл дээрх дижитал меню (QR меню), харшлын самбар, нууц үгтэй admin самбартай. Vercel дээр ажиллана.
+
+## Бүтэц
+
+| Зам | Тайлбар |
+| --- | --- |
+| `/` | Үйлчлүүлэгчийн меню: ангиллын tab, хайлт, харшлын шүүлтүүр, бүтээгдэхүүний дэлгэрэнгүй, харшлын самбар (14 харшил), холбоо барих |
+| `/admin` | Admin самбар: ангилал болон бүтээгдэхүүн нэмэх, засах, устгах, эрэмбэлэх, нуух; үнэ, kcal, харшил, шошго, зураг; тохиргоо; QR татах |
+| `/api/menu` | GET: нийтийн меню (CDN дээр 15 сек кэшлэнэ). PUT: зөвхөн нэвтэрсэн admin хадгална |
+| `/api/login`, `/api/logout`, `/api/session` | Нэвтрэлт (HttpOnly, Secure, SameSite=Strict cookie, HMAC гарын үсэгтэй, 12 цаг) |
+| `/api/upload` | Admin зураг байршуулах (браузер дээр 1000px болгон жижигрүүлж WEBP болгоно) |
+| `/data/menu.json` | Анхны меню (PDF цэснээс). Blob хоосон үед энэ харагдана |
+| `/qr/` | 2 төрлийн QR: афиш (`ates-qr-afis`) ба энгийн лого бүхий (`ates-qr-sade`), PNG + SVG |
+
+Framework байхгүй: цэвэр HTML, CSS, JS + Vercel Node functions. Build алхам шаардлагагүй.
+
+## Хадгалалт (Vercel Blob)
+
+Меню `menu/current.json` нэртэйгээр Vercel Blob дээр хадгалагдана; өдөр бүрийн нөөц `menu/backup/YYYY-MM-DD.json`. Зураг `images/` дотор.
+
+Vercel дээр шаардлагатай орчны хувьсагчид:
+
+| Нэр | Тайлбар |
+| --- | --- |
+| `ADMIN_PASSWORD` | Admin нууц үг (6+ тэмдэгт). Зөвхөн сервер талд байна, клиент кодонд байхгүй |
+| `BLOB_READ_WRITE_TOKEN` | Blob store-г төсөлд холбоход Vercel автоматаар нэмнэ |
+| `SESSION_SECRET` (заавал биш) | Cookie гарын үсгийн тусдаа нууц. Байхгүй бол `ADMIN_PASSWORD`-оос гаргана |
+
+Нууц үг солих: Vercel → Project → Settings → Environment Variables → `ADMIN_PASSWORD` засаад **Redeploy** хийнэ. Солиход бүх хуучин session хүчингүй болно.
+
+## Өгөгдлийн тэмдэглэл
+
+* Үнэ, грамм, ихэнх kcal утга хэвлэмэл PDF цэснээс авсан.
+* Ундаа, амттан, зарим menü багцын kcal нь **тооцоолсон** (`kcalEstimated: true`, admin дээр "Kalori tahmini" гэж харагдана).
+* **Бүх харшлын мэдээлэл тооцоолсон.** Эзэмшигч хоол бүрийн жорыг шалгаж admin дээрээс баталгаажуулах шаардлагатай.
+* Харагдах текстэнд үг хооронд зураас (`-`, `–`, `—`) ашиглахгүй. Шалгах: `npm run check`.
+
+## Локал ажиллуулах
+
+```bash
+npm install
+ADMIN_PASSWORD=test1234 node scripts/dev-server.mjs   # http://localhost:3000
+```
+
+`BLOB_READ_WRITE_TOKEN` байхгүй үед меню `data/menu.json`-оос уншина, admin хадгалах боломжгүй (анхааруулга харуулна).
+
+Анхны менюг дахин үүсгэх: `npm run seed` (`scripts/build-seed.mjs`).

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Yönetim Paneli | Ateş Döner</title>
+  <meta name="theme-color" content="#0E0A08">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/assets/css/menu.css">
+  <link rel="stylesheet" href="/assets/css/admin.css">
+  <script type="module" src="/assets/js/admin.js"></script>
+</head>
+<body class="admin">
+
+  <!-- Login -->
+  <section class="login" id="loginView" hidden>
+    <form class="login__card" id="loginForm" autocomplete="on">
+      <img src="/assets/img/logo.webp" width="96" height="96" alt="Ateş Döner logosu">
+      <p class="eyebrow">Ateş Döner Güllük</p>
+      <h1 class="display display--sm">Yönetim paneli</h1>
+      <label class="field">
+        <span>Şifre</span>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+      </label>
+      <p class="form-error" id="loginError" role="alert" hidden></p>
+      <button class="btn btn--flame" type="submit" id="loginBtn">Giriş yap</button>
+      <a class="login__back" href="/">Menüye dön</a>
+    </form>
+  </section>
+
+  <!-- App -->
+  <div class="app" id="appView" hidden>
+    <header class="topbar">
+      <div class="topbar__brand">
+        <img src="/assets/img/logo.webp" width="40" height="40" alt="">
+        <div>
+          <p class="topbar__title">Yönetim paneli</p>
+          <p class="topbar__status" id="saveStatus" aria-live="polite">Hazır</p>
+        </div>
+      </div>
+      <div class="topbar__actions">
+        <a class="btn-sm" href="/" target="_blank" rel="noopener">Menüyü gör</a>
+        <button class="btn-sm" type="button" id="logoutBtn">Çıkış</button>
+      </div>
+    </header>
+
+    <div class="alert alert--warn" id="storageWarn" hidden>
+      <b>Veri deposu bağlı değil.</b> Değişiklikler kaydedilemez. Vercel projesinde Blob deposu oluşturulup projeye bağlanmalıdır (README dosyasına bakınız).
+    </div>
+
+    <nav class="segmented" role="tablist" aria-label="Bölümler">
+      <button role="tab" aria-selected="true" data-view="products">Ürünler</button>
+      <button role="tab" aria-selected="false" data-view="settings">Ayarlar</button>
+      <button role="tab" aria-selected="false" data-view="qr">QR kodlar</button>
+    </nav>
+
+    <main class="admin-main">
+      <!-- Products -->
+      <section data-panel="products">
+        <div class="alert alert--info">
+          <b>Önemli:</b> Kalori değerleri basılı menüden alınmıştır; <span class="est">Tahmini</span> etiketli değerler ve tüm alerjen bilgileri tarafımızca tahmin edilmiştir. Lütfen her ürünü kontrol edip gerekirse düzeltin.
+        </div>
+        <div class="toolbar">
+          <label class="search search--admin">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="adminSearch" type="search" placeholder="Ürün ara" aria-label="Ürün ara">
+          </label>
+          <button class="btn-sm btn-sm--flame" type="button" id="addCategory">+ Kategori</button>
+        </div>
+        <div id="catList"></div>
+      </section>
+
+      <!-- Settings -->
+      <section data-panel="settings" hidden>
+        <form id="settingsForm" class="settings">
+          <div class="card-box">
+            <h2 class="box-title">Duyuru</h2>
+            <label class="field"><span>Menünün üstünde görünen duyuru (boş bırakılırsa gizlenir)</span>
+              <input name="notice" maxlength="300" placeholder="Örnek: Siparişlerinizi kasaya veriniz"></label>
+            <label class="field"><span>Slogan</span><input name="tagline" maxlength="160"></label>
+          </div>
+          <div class="card-box">
+            <h2 class="box-title">İletişim ve konum</h2>
+            <label class="field"><span>Adres</span><input name="address" maxlength="200"></label>
+            <label class="field"><span>Google Haritalar bağlantısı</span><input name="mapsUrl" type="url" maxlength="600"></label>
+            <div class="row2">
+              <label class="field"><span>Telefon 1</span><input name="phone1" maxlength="30" inputmode="tel"></label>
+              <label class="field"><span>Telefon 2</span><input name="phone2" maxlength="30" inputmode="tel"></label>
+            </div>
+            <div class="row2">
+              <label class="field"><span>Instagram kullanıcı adı</span><input name="instagram" maxlength="60"></label>
+              <label class="field"><span>Web sitesi</span><input name="website" maxlength="120"></label>
+            </div>
+          </div>
+          <div class="card-box">
+            <h2 class="box-title">Yemek kartları</h2>
+            <label class="field"><span>Geçerli kartlar (virgülle ayırın, boş bırakılırsa gizlenir)</span>
+              <input name="mealCards" maxlength="400" placeholder="Örnek: Sodexo, Multinet, Setcard"></label>
+          </div>
+          <div class="card-box">
+            <h2 class="box-title">Alt bilgi notları</h2>
+            <label class="field"><span>Her satır ayrı bir not olarak gösterilir</span>
+              <textarea name="footnotes" rows="7"></textarea></label>
+          </div>
+          <button class="btn btn--flame" type="submit">Ayarları kaydet</button>
+        </form>
+      </section>
+
+      <!-- QR -->
+      <section data-panel="qr" hidden>
+        <div class="qr-grid">
+          <article class="card-box qr-card">
+            <h2 class="box-title">Afiş QR</h2>
+            <p class="muted">Masa ve vitrin için baskıya hazır afiş (A5 oranı).</p>
+            <img src="/qr/ates-qr-afis.png" alt="Ateş Döner menü QR afişi" loading="lazy">
+            <div class="qr-links">
+              <a class="btn-sm btn-sm--flame" href="/qr/ates-qr-afis.png" download>PNG indir</a>
+              <a class="btn-sm" href="/qr/ates-qr-afis.svg" download>SVG indir</a>
+            </div>
+          </article>
+          <article class="card-box qr-card">
+            <h2 class="box-title">Sade QR</h2>
+            <p class="muted">Ortasında logo bulunan sade QR; etiket, menü kartı veya sosyal medya için.</p>
+            <img src="/qr/ates-qr-sade.png" alt="Ateş Döner menü QR kodu" loading="lazy">
+            <div class="qr-links">
+              <a class="btn-sm btn-sm--flame" href="/qr/ates-qr-sade.png" download>PNG indir</a>
+              <a class="btn-sm" href="/qr/ates-qr-sade.svg" download>SVG indir</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Product editor -->
+  <dialog class="sheet editor" id="productDialog" aria-labelledby="pdTitle">
+    <form class="sheet__panel" id="productForm" method="dialog">
+      <button class="sheet__close" type="button" data-close aria-label="Kapat">&times;</button>
+      <p class="eyebrow" id="pdEyebrow">Ürün</p>
+      <h2 class="display display--sm" id="pdTitle">Ürünü düzenle</h2>
+
+      <label class="field"><span>Ürün adı</span><input name="name" required maxlength="100"></label>
+      <label class="field"><span>Kategori</span><select name="category"></select></label>
+      <label class="field"><span>Açıklama</span><textarea name="description" rows="3" maxlength="500"></textarea></label>
+      <label class="field"><span>İçindekiler</span><input name="ingredients" maxlength="300"></label>
+
+      <fieldset class="fs">
+        <legend>Porsiyon, fiyat ve kalori</legend>
+        <div class="variants" id="variants"></div>
+        <button type="button" class="btn-sm" id="addVariant">+ Porsiyon ekle</button>
+      </fieldset>
+
+      <fieldset class="fs">
+        <legend>Alerjenler</legend>
+        <div class="chips" id="allergenChips"></div>
+      </fieldset>
+
+      <fieldset class="fs">
+        <legend>Etiketler</legend>
+        <div class="chips" id="tagChips"></div>
+      </fieldset>
+
+      <fieldset class="fs">
+        <legend>Görsel</legend>
+        <div class="img-edit">
+          <div class="img-edit__preview" id="imgPreview"></div>
+          <div class="img-edit__actions">
+            <label class="btn-sm btn-sm--flame file-btn">Görsel yükle<input type="file" id="imgFile" accept="image/*"></label>
+            <button type="button" class="btn-sm" id="imgRemove">Görseli kaldır</button>
+            <p class="muted small" id="imgStatus">JPG, PNG ya da WEBP. Otomatik küçültülür.</p>
+          </div>
+        </div>
+      </fieldset>
+
+      <label class="switch-row">
+        <input type="checkbox" name="visible">
+        <span class="switch" aria-hidden="true"></span>
+        <span>Menüde göster</span>
+      </label>
+
+      <p class="form-error" id="pdError" role="alert" hidden></p>
+      <div class="sheet__actions">
+        <button type="button" class="btn btn--danger" id="pdDelete">Sil</button>
+        <button type="submit" class="btn btn--flame" id="pdSave">Kaydet</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Category editor -->
+  <dialog class="sheet editor" id="categoryDialog" aria-labelledby="cdTitle">
+    <form class="sheet__panel" id="categoryForm" method="dialog">
+      <button class="sheet__close" type="button" data-close aria-label="Kapat">&times;</button>
+      <p class="eyebrow">Kategori</p>
+      <h2 class="display display--sm" id="cdTitle">Kategoriyi düzenle</h2>
+      <label class="field"><span>Kategori adı</span><input name="name" required maxlength="80"></label>
+      <label class="field"><span>Kısa not (isteğe bağlı)</span><input name="note" maxlength="240"></label>
+      <label class="switch-row">
+        <input type="checkbox" name="visible">
+        <span class="switch" aria-hidden="true"></span>
+        <span>Menüde göster</span>
+      </label>
+      <div class="sheet__actions">
+        <button type="button" class="btn btn--danger" id="cdDelete">Sil</button>
+        <button type="submit" class="btn btn--flame">Kaydet</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>

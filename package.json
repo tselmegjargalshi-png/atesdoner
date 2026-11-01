@@ -1,0 +1,15 @@
+{
+  "name": "atesdoner-menu",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Ateş Döner Güllük dijital menü ve yönetim paneli",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "seed": "node scripts/build-seed.mjs",
+    "check": "node scripts/check-text.mjs"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.8.2"
+  }
+}
