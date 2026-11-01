@@ -1,8 +1,6 @@
-import { put, head } from '@vercel/blob';
+import { put, head, list, del } from '@vercel/blob';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-
-const MENU_PATH = 'menu/current.json';
 
 export function storageConfigured() {
   return Boolean(process.env.BLOB_READ_WRITE_TOKEN || process.env.BLOB_STORE_ID);
@@ -13,15 +11,24 @@ export async function readSeed() {
   return JSON.parse(await readFile(file, 'utf8'));
 }
 
+// Public Blob URLs are CDN cached and an overwrite can take up to 60 s to show.
+// So every save writes an immutable version file, and a small pointer blob carries
+// the current version id in its content type. head() reads metadata from the Blob
+// API (not the CDN), so the pointer is always fresh and the version file never stale.
+const POINTER = 'menu/current.json';
+const VERSION_DIR = 'menu/v/';
+
 export async function readMenu() {
   if (storageConfigured()) {
     try {
-      const meta = await head(MENU_PATH);
-      // Version the URL by upload time: fresh after every save, still CDN cacheable.
-      const v = new Date(meta.uploadedAt).getTime();
-      const r = await fetch(`${meta.url}?v=${v}`, { cache: 'no-store' });
-      if (r.ok) return { menu: await r.json(), source: 'blob' };
-      console.error('readMenu fetch', r.status);
+      const meta = await head(POINTER);
+      const m = /version=([a-z0-9]+)/i.exec(meta.contentType || '');
+      if (m) {
+        const origin = new URL(meta.url).origin;
+        const r = await fetch(`${origin}/${VERSION_DIR}${m[1]}.json`);
+        if (r.ok) return { menu: await r.json(), source: 'blob' };
+        console.error('readMenu version fetch', r.status);
+      }
     } catch (e) {
       const msg = String((e && e.message) || e);
       if (!/not.?found|does not exist/i.test(msg)) console.error('readMenu', e);
@@ -35,21 +42,28 @@ export async function writeMenu(menu) {
     throw Object.assign(new Error('storage_not_configured'), { status: 503 });
   }
   const body = JSON.stringify(menu);
-  await put(MENU_PATH, body, {
+  const id = Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+  await put(`${VERSION_DIR}${id}.json`, body, {
     access: 'public',
     contentType: 'application/json; charset=utf-8',
+    addRandomSuffix: false,
+    cacheControlMaxAge: 31536000,
+  });
+  await put(POINTER, id, {
+    access: 'public',
+    contentType: `text/plain; version=${id}`,
     addRandomSuffix: false,
     allowOverwrite: true,
     cacheControlMaxAge: 60,
   });
-  // Keep a dated backup so a bad edit can be recovered from the Vercel Blob dashboard.
-  const stamp = new Date().toISOString().slice(0, 10);
-  await put(`menu/backup/${stamp}.json`, body, {
-    access: 'public',
-    contentType: 'application/json; charset=utf-8',
-    addRandomSuffix: false,
-    allowOverwrite: true,
-  }).catch(() => {});
+  // Occasionally prune old versions (keeps the newest 40 as an undo history).
+  if (Math.random() < 0.1) {
+    try {
+      const { blobs } = await list({ prefix: VERSION_DIR, limit: 1000 });
+      const old = blobs.sort((a, b) => new Date(b.uploadedAt) - new Date(a.uploadedAt)).slice(40).map((b) => b.url);
+      if (old.length) await del(old);
+    } catch (e) { console.error('prune', e); }
+  }
 }
 
 export async function uploadImage(buffer, contentType, ext) {

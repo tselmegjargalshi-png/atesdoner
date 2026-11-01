@@ -18,7 +18,7 @@ Framework байхгүй: цэвэр HTML, CSS, JS + Vercel Node functions. Buil
 
 ## Хадгалалт (Vercel Blob)
 
-Меню `menu/current.json` нэртэйгээр Vercel Blob дээр хадгалагдана; өдөр бүрийн нөөц `menu/backup/YYYY-MM-DD.json`. Зураг `images/` дотор.
+Хадгалах бүрт `menu/v/<id>.json` гэсэн өөрчлөгдөхгүй хувилбар үүснэ (сүүлийн 40 нь хадгалагдана), `menu/current.json` нь одоогийн хувилбарыг заана. Ингэснээр CDN кэшээс болж хуучин меню харагдахгүй. Зураг `images/` дотор.
 
 Vercel дээр шаардлагатай орчны хувьсагчид:
 
